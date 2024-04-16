@@ -7,18 +7,27 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginScreenComponent } from './screens/login-screen/login-screen.component';
 
 //Angular material
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
+import {MatIconModule} from '@angular/material/icon';
+import { RegistroScreenComponent } from './screens/registro-screen/registro-screen.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginScreenComponent
+    LoginScreenComponent,
+    RegistroScreenComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
