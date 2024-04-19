@@ -39,7 +39,7 @@ export class LoginScreenComponent implements OnInit{
   }
 
   public login(){
-
+    this.router.navigate(["home"]);
   }
 
   public recuperarPwd(){

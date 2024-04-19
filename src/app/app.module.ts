@@ -13,14 +13,25 @@ import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
 import {MatSelectModule} from '@angular/material/select';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 import { RegistroScreenComponent } from './screens/registro-screen/registro-screen.component';
+import { FooterAppComponent } from './partials/footer-app/footer-app.component';
+import { HeaderAppComponent } from './partials/header-app/header-app.component';
+import { LeftSidebarComponent } from './partials/left-sidebar/left-sidebar.component';
+import { HomeScreenComponent } from './screens/home-screen/home-screen.component';
+import { BasesPromocionScreenComponent } from './screens/bases-promocion-screen/bases-promocion-screen.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginScreenComponent,
-    RegistroScreenComponent
+    RegistroScreenComponent,
+    FooterAppComponent,
+    HeaderAppComponent,
+    LeftSidebarComponent,
+    HomeScreenComponent,
+    BasesPromocionScreenComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +43,8 @@ import { RegistroScreenComponent } from './screens/registro-screen/registro-scre
     ReactiveFormsModule,
     MatIconModule,
     MatSelectModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
